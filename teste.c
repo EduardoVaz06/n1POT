@@ -2,14 +2,8 @@
 #include <stdlib.h>
 
 int main(void)
-{
-    printf("Escolha a opção desejada: \n");
-    printf("1 - Gerar arquivo com numeros aleatorios\n");
-    printf("2 - Inverter elementos\n");
-    printf("3 - Ordenar Elementos\n");
-    printf("4 - Encontrar maior, menor e média\n");
-    printf("5 - Converter cada numero para binario\n");
-
+{   
+    //gerando o arquivo e escrevendo num array
     int quantidade;
 
     printf("Selecione a quantidade de numeros: \n");
@@ -31,6 +25,15 @@ int main(void)
     }  
     printf("Arquivo gerado!");
     fclose(arquivo);
+
+    // menu
+    int selecao;
+
+    printf("Escolha a opção desejada: \n");
+    printf("1 - Inverter elementos\n");
+    printf("2 - Ordenar Elementos\n");
+    printf("3 - Encontrar maior, menor e média\n");
+    printf("4 - Converter cada numero para binario\n");
 
     return 0;
 }
